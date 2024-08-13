@@ -1,0 +1,492 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui;
+}
+body{
+    background-color: rgb(244,242,238);
+}
+.header{
+    width: 100%;
+    height: 53px;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 222px; 
+}
+.headerright .options button{
+    border: none;
+    background-color: transparent;
+    margin-left: -3px;
+}
+.headerleft img{
+    height: 36px;
+}
+.headerleft{
+    display: flex;
+}
+.headerright{
+    display: flex;
+}
+.headerright{
+    padding-top: 11px;
+}
+.search input{
+    width: 288px;
+    height: 33px;
+    border-radius: 5px;
+    padding-left: 15px;
+    background-color: rgb(237,243,248);
+    margin-left: 9px;
+    display: flex;
+    align-self: center;
+    border: none;
+    outline: none;
+    transition: outline 0.3s ease, width 0.3s ease;
+}
+.input-box:focus{
+    width: 379px;
+    outline: 2px solid black;
+    border-radius: 3px;
+}
+.home{
+    border-bottom: 2px solid black;
+    opacity: 1;
+    color: rgb(25,25,25);
+    display: inline-block;
+    width: auto;
+    width: 88px;
+    height: 50px;
+    padding-top: 4px;
+    margin-top: -15px;
+}
+/* .notif{
+    border-bottom: 2px solid black;
+} */
+.home button{
+    background-color: transparent;
+    border: none;
+}
+.options svg, .home svg, .profile{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.options p, .home p, .profile p, .apps p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: -1px;
+    font-family: system-ui;
+}
+.options, .profile{
+    display: inline-block;
+    width: auto;
+    opacity: 0.81;
+    margin: 13px;
+    height: 50px;
+    margin-top: -11px;
+}
+.options:hover{
+    opacity: 1;
+    color: black 1;
+}
+.profile:hover{
+    opacity: 1;
+    color: black 1;
+}
+.apps:hover{
+    opacity: 1;
+    color: black 1;
+}
+.profile img{
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    margin: auto;
+    opacity: 1;
+    margin-top: -3px;
+    margin-left: -7px;
+}
+.profile{
+    height: 45px;
+    border: none;
+    background-color: transparent;
+}
+
+.profile:focus .hiddenprofile{
+    display: block;
+}
+.line{
+    width: 1px;
+    height: 53px;
+    background-color: lightgrey;
+    margin-top: -18px;
+}
+.apps{
+    display: inline-block;
+    width: auto;
+    opacity: 0.81;
+    margin: 13px;
+    height: 50px;
+    margin-top: -11px;
+}
+.apps span{
+    display: flex;
+    justify-content: center;
+}
+.small{
+    width: 19px;
+    height: 19px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: auto;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+.profile img{
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    margin: auto;
+    opacity: 1;
+    margin-top: -3px;
+    margin-left: -7px;
+}
+.profile{
+    height: 45px;
+    border: none;
+    background-color: transparent;
+}
+.hiddenprofile{
+    width: 255px;
+    height: 419px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 3px grey;
+    margin-right: 444px;
+    position: fixed;
+    right: 11px;
+    top: 59px;
+    display: none;
+}
+.nameimg{
+    border-radius: 100%;
+    padding: 12px 14px;
+    display: flex;
+}
+.nameimg img{
+    height: 55px;
+}
+.namea a {
+    font-size: 14px;
+    text-decoration: none;
+    color: blue;
+    font-weight: 600;
+    padding-top: 2px;
+}
+.namea a{
+    text-decoration: none;
+}
+.namea{
+    width: 234px;
+    height: 25px; 
+    color: blue;
+    margin: auto;
+    margin-top: -5px;
+    border: 1px solid blue;
+    border-radius: 22px;
+}
+.namea:hover{
+    background-color: RGBA(55, 143, 233, 0.1);
+    border: 2px solid darkblue;
+}
+.name div{
+    font-size: 16px;
+}
+.name p{
+    float: left;
+}
+.account{
+    width: 100%;
+    height: 177px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 11px;
+    padding: 12px 55px 12px 12px;
+}
+.account h2, .manage h2{
+    font-weight: 600;
+    font-size: 16px;
+    float: left;
+    display: block;
+}
+.account .options .small{
+    height: 22px;
+    width: 22px;
+}
+.account .options{
+    float: left;
+    display: flex;
+    margin-top: 2px;
+    margin-left: 0;
+    margin-bottom: -3px;
+}
+.otisumi{
+    margin-top: -23px;
+}
+.otisumi a, .manage a, .sout a{
+    text-decoration: none;
+    color: RGBA(0, 0, 0, 0.6);
+    font-size: 14px;
+    padding: 3px;
+    display: flex;
+}
+.otisumi a:hover, .manage a:hover, .sout a:hover{
+    text-decoration: underline;
+}
+.account .options p:hover{
+    color: blue;
+}
+.manage{
+    width: 100%;
+    height: 88px;
+    /* margin-top: 11px; */
+    padding: 12px 55px 12px 12px;
+}
+.manage a {
+    margin-top: -5px;
+    padding: 7px;
+}
+.sout{
+    border-top: 1px solid lightgrey;
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    padding-top: 2px;
+}
+.profile:focus .hiddenprofile{
+    display: block;
+}
+.line{
+    width: 1px;
+    height: 53px;
+    background-color: lightgrey;
+    margin-top: -18px;
+}
+.apps{
+    display: inline-block;
+    width: auto;
+    opacity: 0.81;
+    margin: 13px;
+    height: 50px;
+    margin-top: -11px;
+}
+.apps span{
+    display: flex;
+    justify-content: center;
+}
+.body{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+    padding: 2px 222px;
+}
+.leftbody{
+    width: 28%;
+    height: 555px;
+}
+.leftimg img{
+    height: 270px;
+    margin-top: 9px;
+    border-radius: 9px;
+}
+.things{
+    width: 77%;
+    height: 222px;
+    margin: auto;
+}
+.things a{
+    font-size: 12px;
+    padding: 7px;
+    color: RGBA(0, 0, 0, 0.7);
+    text-decoration: none;
+    width: 66%;
+    margin: auto;
+}
+.things a:hover{
+    color: RGB(10, 102, 194);
+    text-decoration: underline;
+}
+.thingsp p{
+    font-size: 12px;
+    color: RGBA(0, 0, 0, 0.9);
+}
+.thingsp p img{
+    height: 17px;
+}
+.thingsp{
+    margin-top: -122px;
+    margin-left: 22px;
+}
+.manag{
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 0 22px;
+}
+.manag h2, .manag span{
+    align-self: center;
+    font-size: 16px;
+    color: RGBA(0, 0, 0, 0.65);
+    font-weight: 650;
+}
+.manag span{
+    font-size: 26px;
+}
+.network{
+    width: 100%;
+    margin-left: 27px;
+}
+.grow{
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    display: flex;
+    padding: 0 22px 0 22px;
+}
+.pend, .peeps{
+    width: 100%;
+    height: 44px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.mainnet{
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    margin-top: 11px;
+}
+.growp, .growc{
+    width: 88px;
+    height: 100%;
+    color: green;
+    border-bottom: 2px solid green;
+    display: flex;
+    justify-content: center;
+}
+.growp:hover, .growc:hover{
+    background-color: RGBA(140, 140, 140, 0.1);
+}
+.growp p, .growc p{
+    align-self: center;
+    font-weight: 500;
+}
+.growc{
+    color: RGBA(0, 0, 0, 0.6);
+    border: none;
+}
+.pend p, .pend div, .peeps p, .peeps div{
+    align-self: center;
+    color: RGBA(0, 0, 0, 0.7);
+}
+.pend div, .peeps div, .peeps div{
+    font-weight: 500;
+    width: 77px;
+    height: 33px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pend div:hover, .peeps div:hover{
+    background-color: RGBA(140, 140, 140, 0.1);
+}
+.peeps{
+    margin-top: 0;
+    border: 0;
+}
+.naija{
+    width: 100%;
+    height: 606px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.naijanet{
+    width: 244px;
+    height: 234px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 9px;
+    margin: 1px 7px 11px 1px;
+}
+.zindex img{
+    height: 66px;
+    width: 243px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: -1;
+}
+.bluez img{
+    height: 77px;
+    border-radius: 100%;
+    margin-left: 11px;
+    margin-top: -77px;
+}
+.naijatext div{
+    font-size: 16px;
+    font-weight: 600;
+}
+.naijatext{
+    width: 255px;
+    padding: 3px 11px 3px 11px;
+}
+.naijatext p{
+    font-size: 14px;
+    color: RGBA(0, 0, 0, 0.6);
+    width: 233px;
+    padding-top: 5px;
+}
+.naijatext button{
+    width: 222px;
+    height: 31px;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 44px;
+    background-color: transparent;
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.naijatext div:hover{
+    text-decoration: underline;
+}
+.naijatext button:hover{
+    border: 2px solid darkblue;
+    background-color: RGBA(55, 143, 233, 0.1);
+}
+.naijanet:hover{
+    box-shadow: 0px 4px 0px lightgrey;
+    transform: scale(1.005);
+}
